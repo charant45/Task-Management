@@ -34,7 +34,7 @@ const inProgressTasks: Task[] = [
   {
     priority: 'Low',
     title: 'Onboarding Illustrations',
-    description: '',
+    description: 'Vibrant graphics welcoming new users & Colorful illustrations guiding user onboarding experience',
     dueDate: '18/10/2024'
   }
 ];
