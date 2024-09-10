@@ -67,7 +67,7 @@ task-management-app/
 ├── public/
 │   ├── index.html
 │   └── ...
-├── src/
+|   ├── src/
 │   ├── components/
 │   │   ├── Header.tsx
 │   │   ├── TaskColumn.tsx
@@ -75,6 +75,10 @@ task-management-app/
 │   ├── pages/
 │   │   ├── TaskManagement.tsx
 │   │   └── ...
+│   ├── context/
+│   │   └── todocontext.tsx
+│   ├── lib/
+│   │   └── firebase.ts
 │   ├── App.tsx
 │   ├── index.tsx
 │   └── ...
@@ -98,6 +102,29 @@ The TaskColumn component is responsible for displaying tasks categorized by thei
 <h4>TaskManagement</h4>
 
 The TaskManagement component is the main page of the application, which includes the header, task columns, and the modal for creating new tasks.
+
+<h3> Install Firebase SDK </h3>
+
+<h4>First, make sure you have Firebase SDK installed in your project. Run the following command in your project directory: </h4>
+
+<pre>
+    npm install firebase
+</pre>
+
+<h3>Set Up Firebase Configuration</h3>
+
+<h4>Create a .env file in your project's root directory (same level as package.json). Add your Firebase configuration values there:
+</h4>
+
+<pre>
+ # Firebase configuration
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+</pre>
 
 <h3>Usage</h3>
 
