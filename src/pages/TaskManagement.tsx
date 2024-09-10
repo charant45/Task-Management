@@ -7,6 +7,7 @@ import { CalendarDays } from 'lucide-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons'
 import { Todo, useTodos } from '../context/todocontext'
+import Loading from '../components/Loading'
 
 export default function TaskManagement() {
   const { todos, addTodo, loading } = useTodos()
@@ -67,7 +68,7 @@ export default function TaskManagement() {
   const completedTasks = todos.filter(task => task.status === 'done')
 
   if (loading) {
-    return <div className="flex justify-center items-center h-screen">Loading...</div>
+    return <Loading/>
   }
 
   return (
